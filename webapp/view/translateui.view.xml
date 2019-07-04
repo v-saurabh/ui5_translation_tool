@@ -1,0 +1,60 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="generated.app.controller.translateui" xmlns:m="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <m:Page showHeader="true" title="SAP Translate" showFooter="false" showNavButton="false">
+        <m:content>
+            <m:VBox alignItems="Center" direction="Column" fitContainer="false" width="auto" height="auto" justifyContent="Center" renderType="Div" visible="true" displayInline="false">
+                <m:items>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:ComboBox value="English (Great Britain)" editable="false" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                <m:items>
+                                    <core:Item text="Item" enabled="true"/>
+                                    <core:Item text="Item" enabled="true"/>
+                                    <core:Item text="Item" enabled="true"/>
+                                </m:items>
+                            </m:ComboBox>
+                            <m:Input id="OldText" placeholder="What would you like to translate?" type="Text" showValueHelp="false" enabled="true" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Translate" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <form:SimpleForm minWidth="-1" maxContainerCols="2" layout="ResponsiveGridLayout" editable="false" visible="true">
+                        <form:content>
+                            <m:ComboBox id="NewLang" placeholder="Language" editable="true" enabled="true" visible="true" width="auto" valueState="None" maxWidth="100%">
+                                <m:items>
+                                    <core:Item text="German" enabled="true"/>
+                                    <core:Item text="Spanish (Spain)" enabled="true"/>
+                                    <core:Item text="French (France)" enabled="true"/>
+                                    <core:Item text="Italian" enabled="true"/>
+                                    <core:Item text="Japanese" enabled="true"/>
+                                    <core:Item text="Portuguese (Brazil)" enabled="true"/>
+                                    <core:Item text="Chinese (Simplified)" enabled="true"/>
+                                </m:items>
+                            </m:ComboBox>
+                            <m:Input id="NewText" type="Text" showValueHelp="false" enabled="false" visible="true" width="auto" valueHelpOnly="false" maxLength="0"/>
+                        </form:content>
+                        <form:title>
+                            <core:Title text="Result" level="Auto"/>
+                        </form:title>
+                    </form:SimpleForm>
+                    <m:Button text="Translate" press="translateButtonPressed" type="Emphasized" icon="sap-icon://thing-type" iconFirst="true" width="370px" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:items>
+                <m:layoutData/>
+            </m:VBox>
+        </m:content>
+        <m:footer>
+            <m:Bar design="Auto">
+                <m:contentLeft/>
+                <m:contentMiddle/>
+                <m:contentRight>
+                    <m:Button text="Approve" type="Accept" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="Reject" type="Reject" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <m:Button text="" type="Default" icon="sap-icon://action" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </m:contentRight>
+            </m:Bar>
+        </m:footer>
+        <m:headerContent/>
+        <m:subHeader/>
+        <m:customHeader/>
+    </m:Page>
+</mvc:View>
